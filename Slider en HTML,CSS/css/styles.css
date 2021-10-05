@@ -1,0 +1,63 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: cadetblue;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+max-width: 800px;
+margin: 0 auto;
+padding: 50px;
+
+}
+
+.slider img{
+    border: solid 10px crimson;
+    border-radius: 20%;
+    max-width: 100%;
+    display: none;
+}
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+
+.cont-btn {
+    width: 100%;
+    height: auto;
+    border: solid 10px crimson;
+    border-radius: 20%;
+    box-shadow: 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
